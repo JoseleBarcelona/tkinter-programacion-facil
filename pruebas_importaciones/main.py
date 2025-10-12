@@ -2,7 +2,7 @@ import tkinter as tk
 import widgets as wd
 from child_window import Child_Window
 
-class Main_Window:
+class Main:
     def __init__(self, master):
         self.master = master
         self.master.title("Ventana Principal")
@@ -27,5 +27,5 @@ class Main_Window:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = Main_Window(root)
+    app = Main(root)
     root.mainloop()

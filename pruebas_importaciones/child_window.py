@@ -11,3 +11,9 @@ class Child_Window(tk.Toplevel):
         etiqueta_hija.pack(pady=20)
         boton_cerrar = wd.Boton(self, text="Imprimir en child_window.py", bg="lightcoral", command=lambda: print("Botón en child_window.py presionado"))
         boton_cerrar.pack(pady=10)
+
+
+'''
+Toplevel: Crea una ventana hija que es independiente de la ventana principal (master).
+
+'''

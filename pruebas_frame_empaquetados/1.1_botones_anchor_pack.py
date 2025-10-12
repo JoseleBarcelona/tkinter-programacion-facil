@@ -1,6 +1,6 @@
 import tkinter as tk
 
-class EstablecerAncla:
+class Main:
     def __init__(self, master):
         self.master = master
         self.master.title("Marcos con Ancla")
@@ -14,6 +14,7 @@ class EstablecerAncla:
         self.boton3 = tk.Button(self.master, text="Botón3")
         self.boton4 = tk.Button(self.master, text="Botón4")
 
+        # Empaquetar botones
         self.boton0.pack()
         self.boton1.pack()
         self.boton2.pack(after=self.boton0) # Empaquetar después del botón0
@@ -30,5 +31,5 @@ class EstablecerAncla:
     
 if __name__ == "__main__":
     root = tk.Tk()
-    app = EstablecerAncla(root)
+    app = Main(root)
     root.mainloop()

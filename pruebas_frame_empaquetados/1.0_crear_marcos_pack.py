@@ -10,7 +10,7 @@ class CrearMarco:
         self.etiqueta = tk.Label(self.marco, text=f"Marco {numero}", bg=colorAleatorioHex)
         self.etiqueta.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
-class Aplicacion:
+class Main:
     def __init__(self, master):
         self.master = master
         self.master.title("Crear Marcos Dinámicamente")
@@ -28,5 +28,5 @@ class Aplicacion:
 
 if __name__ == "__main__":
     ventana = tk.Tk()
-    app = Aplicacion(ventana)
+    app = Main(ventana)
     ventana.mainloop()

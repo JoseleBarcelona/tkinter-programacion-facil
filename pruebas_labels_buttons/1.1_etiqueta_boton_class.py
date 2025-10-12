@@ -32,7 +32,7 @@ class VentanaSecundaria(tk.Toplevel):
         boton_cerrar = Boton(self, "Cerrar", self.destroy)
         boton_cerrar.pack()
 
-class Aplicacion:
+class Main:
     def __init__(self, ventana):
         self.ventana = ventana
         self.ventana.title("Mi primera ventana")
@@ -55,5 +55,5 @@ class Aplicacion:
 
 if __name__ == "__main__":
     root = tk.Tk() # Crear la ventana principal
-    app = Aplicacion(root) # Crear una instancia de la aplicación y le pasamos la ventana principal para que maneje esa ventana 
+    app = Main(root) # Crear una instancia de la aplicación y le pasamos la ventana principal para que maneje esa ventana 
     root.mainloop() # Iniciar el bucle principal de la ventana

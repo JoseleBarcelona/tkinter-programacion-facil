@@ -35,7 +35,7 @@ class VentanaSecundaria(tk.Toplevel):
         boton_cerrar.pack()
 
 
-class Aplicacion:
+class Main:
     """
     Clase principal de la aplicación, maneja la ventana raíz.
     """
@@ -73,7 +73,7 @@ class Aplicacion:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = Aplicacion(root)
+    app = Main(root)
     root.mainloop()
 
 

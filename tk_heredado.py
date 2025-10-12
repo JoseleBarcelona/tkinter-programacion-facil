@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
-class VentanaBase(tk.Tk):
+class Main(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Ventana Base")
@@ -32,4 +32,4 @@ class VentanaBase(tk.Tk):
         ventana_hija.geometry("200x150+50+50")
 
 if __name__ == "__main__":
-    VentanaBase()
+    Main()

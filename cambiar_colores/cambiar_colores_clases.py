@@ -1,7 +1,7 @@
 import tkinter as tk
 import random
 
-class ColorChangerApp:
+class Main:
     def __init__(self, root):
         self.root = root
         self.root.title("Mi primera ventana")
@@ -33,5 +33,5 @@ class ColorChangerApp:
 
 if __name__ == "__main__":
     ventana = tk.Tk()
-    app = ColorChangerApp(ventana)
+    app = Main(ventana)
     ventana.mainloop()

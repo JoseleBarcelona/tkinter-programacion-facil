@@ -5,7 +5,7 @@ class EtiquetaPersonalizada(tk.Label):
         super().__init__(master, **kwargs)
         self.config(font=("Arial", 16), fg="blue")
 
-class Aplicacion:
+class Main:
     def __init__(self, master):
         self.master = master
         self.master.title("Aplicación con Botones Personalizados")
@@ -27,5 +27,5 @@ class Aplicacion:
 
 if __name__ == "__main__":
     ventana = tk.Tk()
-    app = Aplicacion(ventana)
+    app = Main(ventana)
     ventana.mainloop()

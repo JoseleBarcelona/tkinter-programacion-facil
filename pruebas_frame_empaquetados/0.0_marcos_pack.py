@@ -6,7 +6,7 @@ ventana.title("Marcos Empaquetados con pack()")
 ventana.geometry("400x400")
 ventana.configure(bg="lightgray")
 
-# Crear marcos y empaquetarlos
+# Crear marcos, instanciar los atributos en el propio objeto y empaquetarlos
 marco1 = tk.Frame(ventana, width=200, height=100, bg="red", relief=tk.RAISED, borderwidth=3)
 marco1.pack(pady=10)
 
