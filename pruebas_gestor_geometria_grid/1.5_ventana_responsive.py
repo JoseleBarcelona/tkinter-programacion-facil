@@ -9,7 +9,7 @@ class Etiqueta:
         self.etiqueta5 = tk.Label(root, text="Etiqueta 5", bg="lightpink")
         self.etiqueta6 = tk.Label(root, text="Etiqueta 6", bg="lightgray")
 
-        self.etiqueta1.grid(row=0, column=0, sticky="nsew")
+        self.etiqueta1.grid(row=0, column=0, sticky="nsew") # sticky="nsew" hace que la etiqueta se expanda en todas las direcciones (norte, sur, este, oeste)
         self.etiqueta2.grid(row=0, column=1, sticky="nsew")
         self.etiqueta3.grid(row=1, column=0, sticky="nsew")
         self.etiqueta4.grid(row=1, column=1, sticky="nsew")
@@ -25,8 +25,8 @@ class Main:
 
         self.etiqueta = Etiqueta(self.root)
 
-        self.root.rowconfigure([0, 1, 2], weight=1)
-        self.root.columnconfigure([0, 1], weight=1)
+        self.root.rowconfigure([0, 1, 2], weight=1) # Configura las filas para que se expandan (responsive), pasando una lista de índices de filas
+        self.root.columnconfigure([0, 1], weight=1) # Configura las columnas para que se expandan (responsive), pasando una lista de índices de columnas
         
 
 if __name__ == "__main__":

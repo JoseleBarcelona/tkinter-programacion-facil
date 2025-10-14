@@ -21,7 +21,7 @@ class Main:
 
         self.etiqueta = Etiqueta(self.root)
 
-        self.root.columnconfigure(0, weight=1)
+        self.root.columnconfigure(0, weight=1) # Hacemos que las columnas se adapten al redimensionar (responsive)
         self.root.columnconfigure(1, weight=1)
         self.root.columnconfigure(2, weight=1)
         self.root.columnconfigure(3, weight=1)

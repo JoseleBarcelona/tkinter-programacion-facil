@@ -10,7 +10,7 @@ class Etiqueta:
         self.etiqueta6 = tk.Label(root, text="Etiqueta 6", bg="lightpink", width=20, height=2)
 
         self.etiqueta1.grid(row=0, column=0)
-        self.etiqueta2.grid(row=0, column=1, columnspan=2)
+        self.etiqueta2.grid(row=0, column=1, columnspan=2) # colspan se expande 2 columnas
         self.etiqueta3.grid(row=0, column=3)
         self.etiqueta4.grid(row=1, column=0)
         self.etiqueta5.grid(row=1, column=1)
